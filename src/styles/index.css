@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-grey1);
+    padding: 10px 20px;
+    color: var(--color-whiteFixed);
+}
+
+.header__logo {
+    height: 1.0rem;
+}
+
+.header__sair {
+    font-size: var(--text2-font-size);
+    cursor: pointer;
+}
+
+
+
+.card {
+    display: flex; 
+    gap: 1rem; 
+    align-items: center; 
+    padding: 1rem;
+}
+
+
+.card__userName {
+    font-weight: var(--title2-font-weight);
+    font-size: var(--title2-font-size);
+    line-height: var(--title2-line-height);
+}
+
+.card__office {
+    font-weight: var(--text2-font-weight);
+    font-size: var(--text2-font-size);
+    line-height: var(--text2-line-height);
+    margin: 0.25rem;
+    color: var(--color-grey2);
+}
+
+
+.card__image {
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+}
+
+
+.container__postsAndSuggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.container__newPotsCreator,
+.container__suggestionFollow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.container__listOfPosts {
+
+    font-weight: var(--text1-font-weight);
+    font-size: var(--text1-font-size);
+    line-height: var(--text1-line-height);
+    gap: 20px;
+}
+
+.title2,
+.title1__suggestionFollow,
+.title1 {
+
+    font-weight: var(--text2-font-weight);
+    font-size: var(--text2-font-size);
+    line-height: var(--text2-line-height);
+
+    font-weight: var(--title2-font-weight);
+
+    font-size: var(--title2-font-size);
+    line-height: var(--title2-line-height);
+    color: var(--color-grey2);
+
+
+    font-weight: var(--title1-font-weight);
+    font-size: var(--title1-font-size);
+    line-height: var(--title1-line-height);
+
+}
+
+.text2 {
+    color: var(--color-grey2);
+}
+
+
+
+.container__main {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+
+.container__postsAndSuggestions {
+    display: flex;
+    gap: 1.25rem;
+    flex: 1;
+    flex-direction: row;
+}
+
+.container__newPotsCreator,
+.container__suggestionFollow {
+     flex: 1;
+}
+
+.container__suggestionFollow {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center; 
+    margin-right: 0.625rem;
+}
+
+.container__listOfPosts {
+    flex: 1;
+}
+

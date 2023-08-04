@@ -28,3 +28,7 @@
     line-height: var(--text3-line-height);
   }
   
+  .text--bold {
+    font-weight: 600;
+    font-size: --textSize2;
+  }

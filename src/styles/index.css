@@ -1,487 +1,306 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-grey1);
-    padding: 10px 20px;
-    color: var(--color-whiteFixed);
+.container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-grey1);
+  max-width: 100%;
 }
 
 .header__logo {
-    height: 1.0rem;
+  margin: 1rem 0 1rem 5rem;
+  padding: 1rem;
 }
 
-.header__sair {
-    font-size: var(--text2-font-size);
-    cursor: pointer;
+.header__exit {
+  display: flex;
+  width: 4rem;
+  margin-right: 3rem;
+  justify-content: flex-end;
+  color: var(--color-whiteFixed);
+  font-size: var(--text2-font-size);
+  font-weight: var(--text2-font-weight);
+  line-height: var(--text2-line-height);
+  cursor: pointer;
 }
 
-
-
-.card {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    padding: 1rem;
-    margin: 1rem;
-    justify-content: flex-start;
+.card__image {
+  height: 3.125rem;
 }
-
 
 .card__userName {
-    font-weight: var(--title2-font-weight);
-    font-size: var(--title2-font-size);
-    line-height: var(--title2-line-height);
+  font-weight: var(--title2-font-weight);
+  font-size: var(--title2-font-size);
+  line-height: var(--title2-line-height);
 }
 
 .card__office {
-    font-weight: var(--text2-font-weight);
-    font-size: var(--text2-font-size);
-    line-height: var(--text2-line-height);
-    margin: 0.25rem;
-    color: var(--color-grey2);
+  font-weight: var(--text2-font-weight);
+  font-size: var(--text2-font-size);
+  line-height: var(--text2-line-height);
+  color: var(--color-grey2);
 }
 
-
-.card__image {
-    width: var(--profile-image-size);
-    height: var(--profile-image-size);
+.title1__suggestionFollow {
+  font-weight: var(--title2-font-weight);
+  font-size: var(--title2-font-size);
+  line-height: var(--title2-line-height);
+  margin: 0.25rem;
+  padding: 1rem 1rem 1rem 0;
 }
 
-
-
-.container__postsAndSuggestions {
-    display: flex;
-    flex-direction: column;
-    gap: 13.25rem;
-    flex: 1;
-}
-
-.container__newPotsCreator,
-.container__suggestionFollow {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-.container__listOfPosts {
-
-    font-weight: var(--text1-font-weight);
-    font-size: var(--text1-font-size);
-    line-height: var(--text1-line-height);
-    gap: 20px;
-}
-
-.title2,
-.title1__suggestionFollow,
 .title1 {
-
-    font-weight: var(--text2-font-weight);
-    font-size: var(--text2-font-size);
-    line-height: var(--text2-line-height);
-
-    font-weight: var(--title2-font-weight);
-
-    font-size: var(--title2-font-size);
-    line-height: var(--title2-line-height);
-    color: var(--color-grey2);
-
-
-    font-weight: var(--title1-font-weight);
-    font-size: var(--title1-font-size);
-    line-height: var(--title1-line-height);
-
+  font-weight: var(--title1-font-weight);
+  font-size: var(--title1-font-size);
+  line-height: var(--title1-line-height);
 }
 
-.text2 {
-    color: var(--color-grey2);
+.text1 {
+  font-weight: var(--text1-font-weight);
+  font-size: var(--text1-font-size);
+  line-height: var(--text1-line-height);
 }
-
-
 
 .container__main {
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
 .container__postsAndSuggestions {
-    display: flex;
-    gap: 1.25rem;
-    flex: 1;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .container__newPotsCreator {
-    position: relative;
-    margin: 0.5rem auto;
-    padding: 0.5rem;
-    max-width: 60%;
-    gap:1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 65%;
 }
 
-
-.container__suggestionFollow {
-
-    display: flex;
-    flex-direction: column;
-    padding: 0.25rem;
-    max-width: 40%;
-    gap: 1.25rem;
-    align-items: flex-start;
-    margin-right: 0.225rem;
+.container__card {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.container__listOfPosts {
-    flex: 1;
+.card__image,
+.card__userName,
+.card__office {
+  margin: 0.25rem;
+  padding: 0.125rem;
 }
 
-.text2--bold,
-.button__card,
-.button__newPostCreatoir,
-.buttonOpen__post {
-    padding: 0.625rem 1.25rem;
-    text-align: center;
-    display: inline-block;
-    border-radius: 0.25rem;
-    font-weight: 600;
-    font-size: var(textSize2);
+.container__newPotsCreator__title1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-
-.button__newPostCreatoir {
-    background-color: var(--color-brand-1);
-    color: var(--color-whiteFixed);
-    position: absolute;
-    top: 90%;
-    right: 0;
-    align-self: flex-end;
-}
-
-.container__buttonAndHearth {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-}
-
-.button__card {
-    background-color: var(--color-whiteFixed);
-    color: var(--color-grey1);
-    border: 1px solid var(--color-grey1);
-    height: 40px;   
-}
-
-.buttonOpen__post:hover {
-    background-color: var(--color-grey0);
-
-}
-
-.button__newPostCreator:hover {
-    background-color: var(--color-brand-2);
-}
-
-.buttonOpen__post:hover{
-    background-color: var(--color-grey0);
-    color: var(--color-whiteFixed);
-}
-
-
-.button__card:hover {
-    background-color: var(--color-whiteFixed);
-    color: var(--color-grey1);
-    border: 1px solid var(--color-brand-2);
-}
-
-.button__card:focus {
-    outline: none;
-    box-shadow: 0 0 3px 2px var(--color-brand-2);
+.container__newPotsCreator__title1__titlePost {
+  display: flex;
+  padding: 1rem;
 }
 
 .container__newPotsCreator__title1__textDescription {
-    margin-bottom: 0.625rem;
+  display: flex;
+  padding: 1rem;
+  border: 0.25rem solid black;
 }
-
-.container__newPotsCreator__title1 input[type="text"]:focus,
-.container__newPotsCreator__title1 textarea:focus {
-    outline: none;
-    box-shadow: 0 0 3px 2px var(--color-brand-2);
-}
-
-.container__newPotsCreator__title1 input[type="text"],
-.container__newPotsCreator__title1 textarea {
-    display: flex;
-    width: 44.475rem;
-    box-sizing: border-box;
-    display: block;
-    margin-bottom: 0.625rem;
-    padding: 0.5rem 0.75rem;
-    font-size: var(--text1-font-size);
-    font-weight: var(--text1-font-weight);
-    line-height: var(--text1-line-height);
-    border: 1px solid var(--color-grey4);
-    border-radius: 4px;
-    resize: none;
-}
-
-.container__newPotsCreator__title1 textarea{
-    height: 8.8375rem;
-}
-
-  
 
 .button__newPostCreatoir {
-    background-color: var(--color-brand-1);
-    color: var(--color-whiteFixed);
-    font-weight: 600;
-    font-size: var(--textSize2);
-    padding: 0.625rem 1.25rem;
-    text-align: center;
-    border-radius: 0.25rem;
-}  
-
-
-li{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 1rem;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+  width: 4.4375rem;
 }
 
-/* Estilo para o modal */
-#postModal {
-    position: fixed;
-    top: 0;
-    left: 0;
+.container__suggestionFollow {
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0.25rem;
+  width: 35%;
+}
+
+.container__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.container__newPotsCreator__title1__titlePost,
+.container__newPotsCreator__title1__textDescription {
+  font-weight: var(--text1-font-weight);
+  font-size: var(--text1-font-size);
+  line-height: var(--text1-line-height);
+  color: var(--color-grey2);
+  border: 0.25rem solid var(--color-grey4);
+  border-radius: 0.5rem;
+}
+
+.container__newPotsCreator__title1__titlePost:focus,
+.container__newPotsCreator__title1__textDescription:focus {
+  border-color: var(--color-brand-2);
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.125rem;
+}
+
+.container__listOfPosts {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.text2--bold {
+  font-size: var(--text2-font-size);
+  font-weight: 600;
+}
+
+.button__newPostCreatoir {
+  background-color: var(--color-brand-1);
+  color: var(--color-whiteFixed);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.button__newPostCreatoir:hover {
+  background-color: var(--color-brand-2);
+}
+
+.button__align {
+  display: flex;
+  justify-content: end;
+}
+
+.button__card {
+  border: 0.125rem solid;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--color-whiteFixed);
+  color: var(--color-grey1);
+  border-color: var(--color-grey1);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.button__card:hover {
+  background-color: var(--color-whiteFixed);
+  border-color: var(--color-brand-1);
+  color: var(--color-brand-1);
+}
+
+.button__card:focus {
+  background-color: var(--color-brand-2);
+  color: var(--color-whiteFixed);
+}
+
+.buttonOpen__post {
+  border: 0.125rem solid;
+  margin: 1rem;
+  padding: 0.8rem;
+  background-color: var(--color-grey1);
+  color: var(--color-whiteFixed);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttonOpen__post:hover {
+  background-color: var(--color-grey0);
+}
+
+.container__buttonAndHearth {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media (width <1025px) {
+  .container__header {
+
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
+  }
+
+  .container__main,
+  .container__postsAndSuggestions {
+    border: 1px solid red;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container__newPotsCreator,
+  .container__suggestionFollow {
+    border: 1px solid red;
+    padding: 0.25rem;
+    width: 100%
+  }
+
+  .container__newPotsCreator__title1__titlePost,
+  .container__newPotsCreator__title1__textDescription {
+    border: 1px solid red;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
-    padding: 1rem;
-  }
-  
-  .modal__content {
-    max-width: 90%;
-    max-height: 90%;
-    background-color: var(--color-whiteFixed);
-    border-radius: 0.25rem;
-    padding: 1rem;
-    overflow-y: auto; 
-    position: relative;
-  }
-  
-  .modal__closeButton {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    font-size: 1.5rem;
-    background-color: transparent;
-    border: none;
-    color: var(--color-grey2);
-    cursor: pointer;
-  }
-  
-  .modal__closeButton:hover {
-    color: var(--color-brand-2);
-  }
-  
-  .card__userName {
-    font-weight: var(--title2-font-weight);
-    font-size: var(--title2-font-size);
-    line-height: var(--title2-line-height);
-    margin: 0;
-  }
-  
-  .card__office {
-    font-weight: var(--text2-font-weight);
-    font-size: var(--text2-font-size);
-    line-height: var(--text2-line-height);
-    margin: 0;
-    color: var(--color-grey2);
-  }
-  
-  .card__image {
-    width: var(--profile-image-size);
-    height: var(--profile-image-size);
-    border-radius: 50%;
-  }
-  
-  .modal__postTitle {
-    font-weight: var(--title1-font-weight);
-    font-size: var(--title1-font-size);
-    line-height: var(--title1-line-height);
-    margin: 1rem 0;
-  }
-  
-  .modal__postContent {
-    font-weight: var(--text1-font-weight);
-    font-size: var(--text1-font-size);
-    line-height: var(--text1-line-height);
-    white-space: nowrap;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-  }
-  
-
-@media screen and (max-width: 425px) {
-    .header {
-        position: fixed; 
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-
-      .text1 {
-        white-space: nowrap; 
-        overflow: hidden; 
-        text-overflow: ellipsis;
-      }  
-    
-    .container__newPotsCreator {
-      max-width: 100%; 
-    }
-  
-    .container__postsAndSuggestions {
-      flex-direction: column; 
-      gap: 1.25rem;
-    }
-  
-    .container__newPotsCreator__title1 input[type="text"],
-    .container__newPotsCreator__title1 textarea {
-      width: 100%; 
-    }
-    
-    .button__newPostCreatoir {
-      width: 100%; 
-      margin-top: 0.625rem; 
-    }
-  
-    .container__suggestionFollow {
-        flex-direction: row;
-        flex-wrap: wrap; 
-        overflow-x: auto;
-        max-width: 100%;
-      }
-
-      .container__suggestionFollow ul {
-        padding: 0; 
-      } 
-  
-    .title1__suggestionFollow {
-      text-align: center; 
-    }
-  
-    .container__listOfPosts {
-      gap: 1.25rem;
-    }
-  
-    .container__buttonAndHearth {
-      flex-direction: column; 
-    }
+    width: 100%;
   }
 
   
-  
-@media screen and (max-width: 425px) {
-    .container__newPotsCreator {
-      max-width: 100%; 
-    }
-  
-    .container__postsAndSuggestions {
-      flex-direction: column; 
-      gap: 1.25rem;
-    }
-  
-    .container__newPotsCreator__title1 input[type="text"],
-    .container__newPotsCreator__title1 textarea {
-      width: 100%; 
-    }
-  
-    .button__newPostCreatoir {
-      width: 100%; 
-      margin-top: 1rem;
-      align-self: auto;
-    }
-  
-    .container__suggestionFollow {
-      max-width: 100%; 
-    }
-  
-    .title1__suggestionFollow {
-      text-align: center;
-    }
-  
-    li {
-      justify-content: center; 
-      align-items: center;
-    }
-  
-    .card {
-      align-items: center; 
-    }
-  
-    .card__image {
-      width: 5rem; 
-      height: 5rem; 
-      object-fit: cover; 
-      border-radius: 50%; 
-    }
+  .container__suggestionFollow {
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline ;
+    align-items: start;
+    width: 100%;
   }
-  
 
-@media screen and (min-width: 425px) and (max-width: 1024px) {
-    .container__newPotsCreator {
-      max-width: 100%; 
-    }
-  
-    .container__postsAndSuggestions {
-      flex-direction: row; 
-      gap: 1.25rem;
-    }
-  
-    .container__newPotsCreator__title1 input[type="text"],
-    .container__newPotsCreator__title1 textarea {
-      width: 60%; 
-    }
-  
-    .button__newPostCreatoir {
-      width: auto; 
-      margin-top: 0; 
-      align-self: flex-end; 
-    }
-  
-    .container__suggestionFollow {
-      max-width: 40%; 
-    }
-  
-    .title1__suggestionFollow {
-      text-align: left; 
-    }
-  
-    .container__listOfPosts {
-      gap: 20px; 
-    }
-  
-    li {
-      justify-content: flex-start; 
-    }
-  
-    .card {
-      align-items: center;
-    }
-  
-    .card__image {
-      width: var(--profile-image-size);
-      height: var(--profile-image-size);
-      object-fit: cover; 
-      border-radius: 50%; 
-    }
+  .suggesrion__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
   }
+
+  .container__list {
+    flex: 1;
+  }
+  .container__postsAndSuggestions {
+    flex-direction: column;
+
+  }
+  .suggestion__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow-x: auto;
+    width: 90%;
+  }
+
+  .container__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -26px;
+}
+
+
+}

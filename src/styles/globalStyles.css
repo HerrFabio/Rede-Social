@@ -15,7 +15,9 @@
     --color-like: #D7443E;
   
     --font-family: 'Inter', sans-serif;
-  
+
+    --radius: var (border-radius: 0.5rem);
+
     --title1-font-weight: 700;
     --title1-font-size: 1.75rem;
     --title1-line-height: 2.5rem;

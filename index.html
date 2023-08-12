@@ -15,18 +15,17 @@
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <script src="./src/scripts/index.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+
 
   <title>Criando rede social</title>
 </head>
 
 <body>
   <!-- HEADER -->
-  <header class="header">
+  <header class="container__header">
     <img class="header__logo" src="./src/assets/img/logo.svg" alt="" />
-    <p class="header__sair">Sair</p>
+    <p class="header__exit">Sair</p>
   </header>
 
   <!-- CONTEÚDO PRINCIPAL -->
@@ -35,7 +34,7 @@
     <section class="container__postsAndSuggestions">
       <!-- CRIAÇÃO DE UM NOVO POST -->
       <section class="container__newPotsCreator">
-        <div class="card">
+        <div class="container__card">
           <img class="card__image" src="./src/assets/img/user1.svg" alt="Samuel" />
           <div>
             <h2 class="card__userName">Samuel Leão</h2>
@@ -47,18 +46,20 @@
         <form class="container__newPotsCreator__title1">
           <input class="container__newPotsCreator__title1__titlePost" type="text" placeholder="Digite o título do post"
             required="" />
-          <textarea class="container__newPotsCreator__title1__textDescription" placeholder="Digite a descrição do post"
+            <textarea class="container__newPotsCreator__title1__textDescription" placeholder="Digite a descrição do post"
             name="" id="" cols="30" rows="5" required=""></textarea>
-          <button class="button__newPostCreatoir text2--bold" type="submit">Postar</button>
+            <div class="button__align">
+              <button class="button__newPostCreatoir text2--bold" type="submit">Postar</button>
+            </div>
         </form>
       </section>
 
       <!-- SUGESTÕES PARA SEGUIR -->
       <section class="container__suggestionFollow">
         <h2 class="title1__suggestionFollow">Sugestões para você seguir</h2>
-        <ul>
+        <ul class="suggestion__list">
           <!-- SUGESTÃO 1 -->
-          <li>
+          <li class="container__list">
             <div class="card">
               <img class="card__image" src="./src/assets/img/user2.svg" alt="Carlos Lima" />
               <div>
@@ -70,7 +71,7 @@
 
           </li>
           <!-- SUGESTÃO 2 -->
-          <li>
+          <li class="container__list">
             <div class="card">
               <img class="card__image" src="./src/assets/img/user3.svg" alt="Rafael Bertoldo" />
               <div>
@@ -81,7 +82,7 @@
             <button class="button__card text2--bold" type="button">Seguir</button>
           </li>
           <!-- SUGESTÃO 3 -->
-          <li>
+          <li class="container__list">
             <div class="card">
               <img class="card__image" src="./src/assets/img/user4.svg" alt="Júlia Martins" />
               <div>
@@ -95,22 +96,6 @@
       </section>
     </section>
 
-    <dialog id="postModal">
-      <div class="modal__content">
-        <button class="modal__closeButton">&times;</button>
-        <div class="modal__postInfo">
-          <div class="card">
-            <img class="card__image" src="" alt="User" />
-            <div>
-              <h2 class="card__userName"></h2>
-              <p class="card__office"></p>
-            </div>
-          </div>
-          <h2 class="modal__postTitle"></h2>
-          <p class="modal__postContent"></p>
-        </div>
-      </div>
-    </dialog>
 
     <!-- ÁREA 2 (LISTAGEM DE POSTS) -->
     <section class="container__listOfPosts">
@@ -210,6 +195,24 @@
       </article>
     </section>
   </main>
+
+  <!-- <button class="buttonOpen__post text2--bold" type="button" onclick="openModal(1)">Abrir Post</button>
+  <button class="buttonOpen__post text2--bold" type="button" onclick="openModal(2)">Abrir Post</button>
+  <button class="buttonOpen__post text2--bold" type="button" onclick="openModal(3)">Abrir Post</button>
+
+  <dialog id="postModal" class="modal">
+    <div class="modal__content">
+      <button class="modal__closeButton" onclick="closeModal()">&times;</button>
+      <h2 class="modal__title text1--bold"></h2>
+      <p class="modal__user"></p>
+      <img class="modal__img" src="" alt="">
+      <p class="modal__stack"></p>
+      <p class="modal__text"></p>
+    </div>
+  </dialog>
+  
+
+  <script src="./src/scripts/index.js"></script> -->
 </body>
 
 </html>

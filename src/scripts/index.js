@@ -45,7 +45,6 @@ postButtons.forEach((button) => {
   });
 });
 
-
 const closeButton = document.querySelector('.close');
 closeButton.addEventListener('click', () => {
   closeModal();

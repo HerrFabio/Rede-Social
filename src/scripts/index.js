@@ -38,6 +38,7 @@ function closeModal() {
   modalController.close();
 }
 
+
 const postButtons = document.querySelectorAll('.buttonOpen__post');
 postButtons.forEach((button) => {
   button.addEventListener('click', () => {

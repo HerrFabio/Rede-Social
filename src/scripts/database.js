@@ -5,6 +5,7 @@ const users = [
     stack: "Front end Engineer",
     img: "./src/assets/img/user1.svg",
   },
+  
   {
     id: 2,
     user: "Samuel Persuhn",

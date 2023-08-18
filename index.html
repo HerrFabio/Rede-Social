@@ -15,7 +15,8 @@
   <!-- FONTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
 
 
   <title>Criando rede social</title>
@@ -46,11 +47,11 @@
         <form class="container__newPotsCreator__title1">
           <input class="container__newPotsCreator__title1__titlePost" type="text" placeholder="Digite o título do post"
             required="" />
-            <textarea class="container__newPotsCreator__title1__textDescription" placeholder="Digite a descrição do post"
+          <textarea class="container__newPotsCreator__title1__textDescription" placeholder="Digite a descrição do post"
             name="" id="" cols="30" rows="5" required=""></textarea>
-            <div class="button__align">
-              <button class="button__newPostCreatoir text2--bold" type="submit">Postar</button>
-            </div>
+          <div class="button__align">
+            <button class="button__newPostCreatoir text2--bold" type="submit">Postar</button>
+          </div>
         </form>
       </section>
 
@@ -122,7 +123,7 @@
           cavaleiros Jedi, que compõem o lado bom da força.
         </p>
         <div class="container__buttonAndHearth">
-          <button  class="buttonOpen__post text2--bold" type="button" data-post-id="1">Abrir Post</button>
+          <button class="buttonOpen__post text2--bold" type="button" data-post-id="1">Abrir Post</button>
           <div>
             <img src="./src/assets/img/heart-gray.svg" alt="Empty Heart(Post not liked)" />
             <small>25</small>
@@ -196,23 +197,27 @@
     </section>
   </main>
 
-  
+
   <dialog id="modalController">
     <div class="modal__container">
       <div class="modal__content">
-        <span class="close" onclick="closeModal()">&times;</span>
-            <img class="modal__img" src="" alt="">
+        <div class="modal__containerInfo">
+          <img class="modal__img" src="" alt="">
+          <div class="modal__info">
             <p class="modal__user"></p>
             <p class="modal__stack"></p>
+            <span class="close" onclick="closeModal()">&times;</span>
+          </div>
+        </div>
         <h2 class="modal__title text1--bold"></h2>
         <p class="modal__text"></p>
       </div>
     </div>
   </dialog>
 
-  
+
   <script src="./src/scripts/database.js"></script>
-  <script src="./src/scripts/index.js"></script> 
+  <script src="./src/scripts/index.js"></script>
 </body>
 
 </html>

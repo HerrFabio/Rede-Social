@@ -7,7 +7,8 @@
   justify-content: space-between;
   background-color: var(--color-grey1);
   width: 100%;
-  height: 37px;
+  height: 5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .header__logo {
@@ -72,9 +73,9 @@
 
 .container__main {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
+  justify-content: center;
 }
 
 .container__postsAndSuggestions {
@@ -176,9 +177,10 @@
 
 .container__listOfPosts {
   display: flex;
-  width: 100%;
-  padding: 1rem;
+  width: 59%;
+  padding: 3rem;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .text2--bold {
@@ -244,10 +246,12 @@
 }
 
 dialog{
-  padding: 3rem;
+  position: relative;
+  top: 5.5rem;
+  left: 14.5rem;
   margin: 3rem;
-  width: 85%;
-  height: 70%;
+  width: 55%;
+  height: 60%;
   border-radius: 1rem;
   background-color: var(--color-whiteFixed);
   
@@ -281,7 +285,25 @@ dialog::backdrop{
 }
   
 
+
+.modal__containerInfo{
+  display: flex;
+  flex-direction: row;  
+  gap: 1rem;
+}
+
+.modal__info{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+  flex-direction: column;
+}
+
 .close{
+  position: relative;
+  top: -3rem;
+  left: 40rem;
   cursor: pointer;
   background-color: var(--color-whiteFixed);
   width: 1rem;
@@ -294,7 +316,6 @@ dialog::backdrop{
   float: right;
   font-weight: 700;
 }
-
 
 @media (width <1025px) {
   .container__header {

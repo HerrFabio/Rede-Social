@@ -20,10 +20,14 @@ function openModal(postId) {
   const modalContent = `
     <div class="modal">
       <div class="modal__content">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal__containerInfo">
         <img class="modal__img" src="${userImageSrc}" alt="${userName}" />
-        <p class="modal__user">Author: ${userName}</p>
-        <p class="modal__stack">Stack: ${userOffice}</p>
+        <div class="modal__info">
+          <p class="modal__user">Author: ${userName}</p>
+          <p class="modal__stack">Stack: ${userOffice}</p>
+        <span class="close" onclick="closeModal()">&times;</span>
+          </div>
+        </div>
         <h2 class="modal__title text1--bold">${postTitle}</h2>
         <p class="modal__text">${postContent}</p>
       </div>
